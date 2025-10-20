@@ -21,7 +21,7 @@ app.use(cors({
 }));
 
 // Routes
-app.use('/api', routes);
+app.use('/', routes);
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 // Error handling
 app.use(errorMiddleware);
