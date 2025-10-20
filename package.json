@@ -5,9 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "dotenv -e .env -- ts-node src/server.ts",
-    "prebuild": "copy .prod.env .env",
     "build": "tsc",
-    "start": "dotenv -e .prod.env -- node dist/server.js",
+    "start": "node dist/server.js",
     "sync": "ts-node src/migrations/sync-tables.ts"
   },
   "license": "ISC",
